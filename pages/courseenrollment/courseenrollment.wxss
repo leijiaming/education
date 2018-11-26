@@ -1,0 +1,93 @@
+.line{
+  height: 20rpx;
+  background-color: #f5f5f5;
+}
+.first{
+  margin-top: 30rpx;
+}
+.item{
+  height: 72rpx;
+}
+.item view{
+  position: relative;
+  height: 72rpx;
+  margin-top: 15rpx;
+  margin-bottom: 15rpx;
+}
+.desc{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 200rpx;
+  height: 72rpx;
+  line-height: 72rpx;
+  text-align: right;
+  font-size: 26rpx;
+  color: #343434;
+  display: inline-block
+}
+
+
+.item view .click-desc{
+  position: absolute;
+  font-size: 26rpx;
+  color: #9f9f9f;
+  width: 420rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  left: 225rpx;
+  border-top:1rpx #5fcceb solid ;
+  border-bottom:1rpx #5fcceb solid;
+  border-left:1rpx #5fcceb solid;
+  border-top-left-radius: 8rpx;
+  border-bottom-left-radius: 8rpx;
+  padding-left: 10rpx;
+}
+.item view .bg{
+  position: absolute;
+  width: 80rpx;
+  height: 74rpx;
+  left: 645rpx;
+  background-color:#5fcceb;
+   border-top-left-radius: 0;
+  border-bottom-left-radius: 0; 
+  border-top-right-radius: 8rpx;
+  border-bottom-right-radius: 8rpx;
+}
+.item view  .drop{
+   position: absolute;
+  width: 40rpx;
+  height: 40rpx;
+  top: 16rpx;
+  left: 665rpx;
+}
+input {
+  font-size:26rpx;
+  color: #9f9f9f;
+  width: 486rpx;
+  height: 70rpx;
+  margin-left: 225rpx;
+  border: 1rpx solid #5fcceb;
+  border-radius: 8rpx;
+  padding-left: 10rpx;
+  display: inline-block;
+  line-height: 70rpx;
+
+}
+.price,.should-price{
+  height: 72rpx;
+  line-height: 72rpx;
+  margin-left: 225rpx;
+  color: #5fcceb;
+  font-size: 26rpx;
+}
+button {
+  width: 260rpx;
+  height: 72rpx;
+  font-size: 26rpx;
+  color: #fff;
+  background-color: #5fcceb;
+  margin-left: 245rpx;
+  margin-top: 80rpx;
+
+}

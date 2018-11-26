@@ -1,0 +1,17 @@
+<view class='container'>
+  <view class='tab'>
+    <view class='{{currentChoose == 1?"item-bg-choose":"item-bg-normal"}}' bindtap="onTabsItemTap" data-index="1">可用优惠券</view>
+    <view class='{{currentChoose == 2?"item-bg-choose":"item-bg-normal"}}' bindtap="onTabsItemTap" data-index="2">历史优惠券</view>
+  </view>
+  <block wx:for="{{couponData}}">
+    <view class='item'>
+      <image src='{{currentChoose==1?useUrl:notUseUrl}}' class='bg'></image>
+      <text class='item-price'>￥{{item.discountPrice}}</text>
+      <text class='item-condition'>满{{item.minLimit}}元可用</text>
+      <text class='item-type'>使用类型:{{item.useType==1?"全场通用":item.useType==2?"课程通用":item.useType==3?
+      "课程专用":item.useType==4?"视频通用":"视频专用"}}</text>
+      <text class='item-date'>有效期限:{{item.useStartDate}} - {{item.useEndDate}}</text>
+      <text class='{{item.status==1?"item-use":"item-not-use"}}' bindtap='use' data-index='{{index}}'>{{item.status==1?"立即使用":item.status==2?"已使用":"已作废"}}</text>
+    </view>
+  </block>
+</view>

@@ -1,0 +1,23 @@
+<view>
+  <scroll-view class="scroll-view_H" scroll-x style="width: 100%">
+     <block wx:for="{{categoryData}}">
+         <view class='{{currentChoose == index?"item-bg-choose":"item-bg-normal"}}' bindtap="onTabsItemTap" data-index="{{index}}">{{item.name}}</view>
+     </block>
+  </scroll-view>
+  <view class='line'></view>
+  <block wx:for="{{categoryDetailData}}">
+    <view class='item' bindtap='detail' data-id='{{item.id}}'>
+          <image src='{{item.introduceFaceImg}}' class='icon'></image>
+          <text class='title'>{{item.name}}</text>
+          <text class='semester-desc'>学期:</text>
+          <text class='semester'>{{item.coursePeriod}}月</text>
+          <text class='classhour-desc'>课时:</text>
+          <text class='classhour'>{{item.courseCount}}节</text>
+          <text class='teacher-desc'>教师:</text>
+          <text class='teacher'>{{item.createUser}}</text>
+          <text class='cost-desc'>费用:</text>
+          <text class='cost'>{{item.fee<=0?"免费":"￥"+item.fee}}</text>
+          <text class='detail'>查看详情</text>
+    </view>
+  </block>
+</view>

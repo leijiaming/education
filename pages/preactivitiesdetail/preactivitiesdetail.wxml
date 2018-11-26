@@ -1,0 +1,17 @@
+<view class='container'>
+  <view class='head'>
+    <image src='{{imgUrls[0]}}' class='bg'></image>
+    <text class='title'>集赞免费送视频课程</text>
+    <text class='term-desc'>有效期:</text>
+    <text class='term'>2018-03-05至2018-04-06</text>
+    <text class='quota-desc'>限额</text>
+    <text class='quota'>前100名</text>
+    <text class='completed-desc'>已完成</text>
+    <text class='completed'>50名</text>
+  </view>
+  <view class='body'>
+    <text class='rule'>活动规则</text>
+    <text class='desc'>作为介绍者:为他人作介绍,应先把晚辈介绍给长辈,把地位低者介绍给地位高者,把男士介绍给女士.介绍人作
+介绍时,应该使用敬词.比如,"王小姐,请允许我向您介绍一下......."或者较随便的可以说,"张先生,我来介绍一下,这位是</text>
+  </view>
+</view>

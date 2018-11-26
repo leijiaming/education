@@ -1,0 +1,81 @@
+<view>
+  <view class='line'></view>
+  <view class='item first'>
+    <view>
+      <text class='desc'>校区选择:</text>
+      <picker bindchange="bindPickerSchool" value="{{index}}" range="{{schoolList}}" range-key='name' mode="selector">
+        <text class='click-desc' bindtap='chooseSchool'>{{schoolListItem==null?"请选择":schoolListItem.name}}</text>
+        <text class='bg'></text>
+      <image src='../images/drop_down.png' class='drop'></image>
+      </picker>
+      
+    </view>
+  </view>
+  <view class='item'>
+    <view>
+      <text class='desc'>班次选择:</text>
+      <picker bindchange="bindPickerClass" value="{{index}}" range="{{classList}}" range-key='courseName' mode="selector" disabled='{{schoolListItem==null || classList==null || classList.length==0}}'>
+        <text class='click-desc' bindtap='chooseClass'>{{classListItem==null?"请选择":classListItem.courseName}}</text>
+          <text class='bg'></text>
+      <image src='../images/drop_down.png' class='drop'></image>
+      </picker>
+    
+    </view>
+  </view>
+  <view class='item'>
+    <view>
+      <text class='desc'>学生姓名:</text>
+      <input value='{{name}}' bindinput='iName'></input>
+    </view>
+  </view>
+  <view class='item'>
+    <view>
+      <text class='desc'>公立学校名称:</text>
+      <input value='{{pubschool}}' bindinput='iPubschool' ></input>
+    </view>
+  </view>
+  <view class='item'>
+    <view>
+      <text class='desc'>公立学校年级:</text>
+      <input value='{{pubgrade}}' bindinput='iPubgrade'></input>
+    </view>
+  </view>
+  <view class='item'>
+    <view>
+      <text class='desc'>联系人:</text>
+      <input value='{{contacts}}' bindinput='iContacts'></input>
+    </view>
+  </view>
+  <view class='item'>
+    <view>
+      <text class='desc'>联系人电话:</text>
+      <input value='{{phone}}' bindinput='iPhone'></input>
+    </view>
+  </view>
+  <view class='item'>
+    <view>
+      <text class='desc'>课堂学费:</text>
+      <text class='price'>￥{{classListItem==null?0:classListItem.fee}}</text>
+    </view>
+  </view>
+  <view class='item'>
+    <view>
+      <text class='desc'>优惠券:</text>
+      <picker bindchange="bindPickerCoupon" value="{{index}}" range="{{couponList}}" range-key='name'  mode="selector"
+      disabled='{{schoolListItem==null || classListItem==null || couponList==null || couponList.length==0}}'
+      >
+        <text class='click-desc' bindtap='chooseCoupon'>{{couponListItem==null?"请选择":couponListItem.name}}</text>
+         <text class='bg'></text>
+      <image src='../images/drop_down.png' class='drop'></image>
+      </picker>
+     
+    </view>
+  </view>
+  <view class='item'>
+    <view>
+      <text class='desc'>应付学费:</text>
+      <text class='should-price'>￥{{realPrice}}</text>
+    </view>
+  </view>
+  <button bindtap='pay'>立即支付</button>
+</view>

@@ -1,0 +1,46 @@
+<view class='container'>
+  <view class='item' data-index='0'  bindtap='onItemClick'>
+    <text class='desc'>昵称</text>
+    <text class='content aligin'>{{userInfo.nickName}}</text>
+  </view>
+  <view class='item' data-index='1'  bindtap='onItemClick' >
+    <text class='desc'>真实姓名</text>
+    <text class='content'>{{userInfo.realName}}</text>
+    <image src='{{nextIcon}}'></image>
+  </view>
+  <view class='item' data-index='2'  bindtap='onItemClick' >
+    <text class='desc'>手机号</text>
+    <text class='content'>{{userInfo.mobile}}</text>
+    <image src='{{nextIcon}}'></image>
+  </view>
+  <view class='item item-gone' data-index='3'  bindtap='onItemClick'>
+    <text class='desc'>家庭住址</text>
+    <text class='content'>{{userInfo.address}}</text>
+    <image src='{{nextIcon}}'></image>
+  </view>
+  <view class='item item-gone' data-index='4'  bindtap='onItemClick'>
+    <text class='desc'>学生姓名</text>
+    <text class='content'>{{userInfo.studentName}}</text>
+    <image src='{{nextIcon}}'></image>
+  </view>
+  <view class='item item-gone' data-index='5'  bindtap='onItemClick'>
+    <text class='desc'>公立学校名称</text>
+    <text class='content'>{{userInfo.publicSchool}}</text>
+    <image src='{{nextIcon}}'></image>
+  </view>
+  <view class='item item-gone' data-index='6'  bindtap='onItemClick'>
+    <text class='desc'>公立学校年级</text>
+    <text class='content'>{{userInfo.publicGrade}}</text>
+    <image src='{{nextIcon}}'></image>
+  </view>
+  <view class='item item-gone' data-index='7'  bindtap='onItemClick'>
+    <text class='desc'>关爱班级</text>
+    <text class='content'>{{userInfo.cleClass}}</text>
+    <image src='{{nextIcon}}'></image>
+  </view>
+  <view class='item item-gone'>
+    <text class='desc' data-index='8'  bindtap='onItemClick'>入学时间</text>
+    <text class='content'>{{userInfo.cleStartDate}}</text>
+    <image src='{{nextIcon}}'></image>
+  </view>
+</view>

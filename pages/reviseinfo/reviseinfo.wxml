@@ -1,0 +1,4 @@
+<view>
+    <input value='{{reviseinfo}}' bindinput="inputInfo"></input>
+    <button bindtap='save'>保存</button>
+</view>

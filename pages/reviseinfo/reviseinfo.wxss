@@ -1,0 +1,21 @@
+/* pages/reviseinfo/reviseinfo.wxss */
+
+input {
+  margin-top: 50px;
+  width: 710rpx;
+  background-color: transparent;
+  margin-left: 20rpx;
+  height: 100rpx;
+  border-bottom: 1rpx solid #f2f2f2;
+}
+
+button {
+  margin-top: 250rpx;
+  width: 710rpx;
+  margin-left: 20rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 28rpx;
+  background-color: #5fcceb;
+  color: #fff;
+}

@@ -1,0 +1,28 @@
+<view>
+    <view>
+        <text class='about-title'>关于我们</text>
+    </view>
+    <view>
+      <image src='{{imgUrls[0]}}' class='about-bg'>
+
+      </image>
+    </view>
+    <view class='about-desc'>
+          胡辣汤由多种天然中草药按比例配制的汤料再加入胡椒和辣椒又用骨头汤做底料的胡辣汤，其特点是汤味浓郁、汤色靓丽、汤汁粘稠，香辣可口，十分适合配合其它早点进餐。目前，已经发展成为河南及陕西等周边省份都喜爱和知晓的小吃之一。
+    </view>
+     <view>
+        <text class='conn-title'>联系我们</text>
+    </view>
+    <view class='item'>
+        <text class='item-content'>关爱少儿培训学校</text>
+    </view>
+     <view class='item'>
+        <text class='item-content'>400601456</text>
+    </view>
+     <view class='item'>
+        <text class='item-content'>123@456.com</text>
+    </view>
+     <view class='item'>
+        <text class='item-content'>陕西西安</text>
+    </view>
+</view>

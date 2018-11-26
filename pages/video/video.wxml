@@ -1,0 +1,14 @@
+<view>
+  <scroll-view class="scroll-view_H" scroll-x style="width: 100%">
+     <block wx:for="{{categoryData}}">
+         <view class='{{currentChoose == index?"item-bg-choose":"item-bg-normal"}}' bindtap="onTabsItemTap" data-index="{{index}}">{{item.name}}</view>
+     </block>
+  </scroll-view>
+  <block wx:for="{{categoryDetailData}}">
+    <view class='item'  bindtap='detail' data-id='{{item.id}}'>
+      <image src='{{item.faceImg}}'></image>
+      <text class='title'>{{item.bookName}}</text>
+      <text class='detail' >查看详情</text>
+    </view>
+  </block>
+</view>

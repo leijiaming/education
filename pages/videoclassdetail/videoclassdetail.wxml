@@ -1,0 +1,55 @@
+<view>
+  <view class='{{videoData.buyStatus==0?"head-default":"head"}}'>
+    <video src="{{videoData.viewUrl}}" autoplay='{{autoplay}}' class='{{autoplay?"videobgshow":"videobghide"}}' bindended="end" controls objectFit='fill'></video>
+    <image src='{{videoData.faceImg}}' class='{{autoplay?"bghide":"bgshow"}}'></image>
+    <text class='title'>{{videoData.name}}</text>
+    <text class='popularity-desc'>人气:</text>
+    <text class='popularity'>{{videoData.hotNum}}</text>
+    <text class='price'>￥{{videoData.fee}}</text>
+    <text class='date {{videoData.buyStatus==0?"hide":"show"}}'>有效期止:{{videoData.validEndDate}}</text>
+     <picker bindchange="bindPickerCoupon" value="{{index}}" range="{{videoData.videoCouponList}}" range-key='name' mode="selector" disabled="{{videoData.buyStatus==1 || videoData.videoCouponList.length == 0}}" bindcancel="pickerCancle">
+    <text class='signup' bindtap='play'>{{videoData.buyStatus==0?"购买":"观看"}}</text>
+    </picker>
+  </view>
+  <view class="tabar">
+    <view class='{{currentChoose == 0?"item-bg-choose":"item-bg-normal"}}' bindtap="onTabsItemTap" data-index="0">课程介绍</view>
+    <view class='{{currentChoose == 1?"item-bg-choose":"item-bg-normal"}}' bindtap="onTabsItemTap" data-index="1">系列视频</view>
+    <view class='{{currentChoose == 2?"item-bg-choose":"item-bg-normal"}}' bindtap="onTabsItemTap" data-index="2">评论</view>
+  </view>
+  <view class='{{currentChoose==1?"show":"hide"}}'>
+    <block wx:for="{{videoData.videoList}}">
+      <view class='item' bindtap='onItemClick' data-id='{{item.id}}'>
+        <image class='item-icon' src='{{item.faceImg}}'></image>
+        <text class='item-title'>{{item.name}}</text>
+        <text class='item-teacher-desc'>讲师</text>
+        <text class='item-teacher'>{{item.teacherName}}</text>
+        <text class='item-popularity-desc'>人气</text>
+        <text class='item-popularity'>0</text>
+        <text class='item-class'>￥{{item.fee}}</text>
+      </view>
+    </block>
+  </view>
+  <view class='{{currentChoose==0?"show":"hide"}} summary'>
+    {{videoData.contentSummary}}
+  </view>
+  <view class='{{currentChoose==2?"show":"hide"}}'>
+    <view class='i-content'>
+      <image src='{{head}}'></image>
+      <input class='click-desc' value='{{comment}}' bindinput='iComment'></input>
+      <text bindtap='gocomment'>评论</text>
+    </view>
+    <block wx:for="{{commentList}}">
+      <view>
+        <view class='comment-item'>
+          <image src='{{item.userHeadImg}}'></image>
+          <view class='left'>
+            <view class='comment-name'>{{item.userName}}</view>
+            <view class='comment-date'>{{item.commentTime}}</view>
+            <view class='comment-content'>{{item.content}}</view>
+          </view>
+          <view style='clear:both'></view>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

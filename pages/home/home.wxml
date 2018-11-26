@@ -1,0 +1,105 @@
+<!--pages/home/home.wxml-->
+<view>
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-color="{{indicatorColor}}" indicator-active-color="{{indicatorActiveColor}}" bindtap='onBannerItenClick'>
+    <block wx:for="{{bannerList}}">
+      <swiper-item >
+        <image src="{{item.faceImg}}" class="slide-image" data-index="{{index}}"/>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class='notice-container'>
+    <view>
+      <image src='{{noticeIcon}}'></image>
+    </view>
+    <view>
+      <text bindtap='onNoticeItemClick'>{{notice}}</text>
+    </view>
+  </view>
+  <view class='menu-container'>
+    <view  bindtap='onItemClick' data-index='0'>
+      <view class='image-container'>
+        <image src='{{newsIcon}}'></image>
+      </view>
+      <view class='text-container'>
+        <text>新闻动态</text>
+      </view>
+    </view>
+    <view  bindtap='onItemClick' data-index='1'>
+      <view class='image-container'>
+        <image src='{{classIcon}}'></image>
+      </view>
+      <view class='text-container'>
+        <text>课程介绍</text>
+      </view>
+    </view>
+    <view  bindtap='onItemClick' data-index='2'>
+      <view class='image-container'>
+        <image src='{{freeIcon}}'></image>
+      </view>
+      <view class='text-container'>
+        <text>课程试听</text>
+      </view>
+    </view>
+    <view bindtap='onItemClick' data-index='3'>
+      <view class='image-container'>
+        <image src='{{weekIcon}}'></image>
+      </view>
+      <view class='text-container'>
+        <text>本周课程</text>
+      </view>
+    </view>
+    <view  bindtap='onItemClick' data-index='4'>
+      <view class='image-container'>
+        <image src='{{searchIcon}}'></image>
+      </view>
+      <view class='text-container'>
+        <text>分校查询</text>
+      </view>
+    </view>
+    <view  bindtap='onItemClick' data-index='5'>
+      <view class='image-container'>
+        <image src='{{teacherIcon}}'></image>
+      </view>
+      <view class='text-container'>
+        <text>名师简介</text>
+      </view>
+    </view>
+     <view  bindtap='onItemClick' data-index='6'>
+      <view class='image-container'>
+        <image src='{{feeIcon}}'></image>
+      </view>
+      <view class='text-container'>
+        <text>报名缴费</text>
+      </view>
+    </view>
+    <view  bindtap='onItemClick' data-index='7'>
+      <view class='image-container'>
+        <image src='{{usIcon}}'></image>
+      </view>
+      <view class='text-container'>
+        <text>联系我们</text>
+      </view>
+    </view>
+  </view>
+  <view class='course-desc'>
+    <text style='color:#dddddd'>————</text><text>热门课程</text><text  style='color:#dddddd'>————</text>
+  </view>
+  <view>
+    <block wx:for="{{hotCourseList}}">
+      <view class='item' bindtap='onHotItemClick' data-id='{{item.id}}'>
+        <view class='item-bg'>
+          <image src='{{item.introduceFaceImg}}'>
+          </image>
+        </view>
+        <view class='item-content'>
+          <view>
+            <text class='title-container'>{{item.name}}</text>
+            <text class='semester-container'>学期:{{item.coursePeriod}}个月</text>
+            <text class='classhour-container'>课时:{{item.courseCount}}节</text>
+            <text class='price-container'>￥{{item.fee}}</text>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

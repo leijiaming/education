@@ -1,0 +1,14 @@
+<view class='container'>
+  <block wx:for="{{reserveData}}">
+    <view class='item'>
+        <image class='item-icon' src='{{item.courseFaceImg}}'></image>
+        <text class='item-title'>{{item.courseName}}</text>
+        <text class='item-classtime-desc'>上课时间:</text>
+        <text class='item-classtime'>{{item.startTiem}}</text>
+        <text class='item-addr-desc'>地址:</text>
+        <text class='item-addr'>{{item.address}}</text>
+        <text class='item-dec'>课程</text>
+        <text class='item-detail' bindtap='detail' data-id="{{item.classId}}">查看详情</text>
+    </view>
+  </block>
+</view>

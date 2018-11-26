@@ -1,0 +1,62 @@
+<view>
+  <view class='line'></view>
+  <view class='item first'>
+    <view>
+      <text class='desc'>校区选择:</text>
+      <picker bindchange="bindPickerSchool" value="{{index}}" range="{{schoolList}}" range-key='name' mode="selector" disabled='{{body !=null}}'>
+        <text class='click-desc' bindtap='chooseSchool'>{{schoolListItem==null?"请选择":schoolListItem.name}}</text>
+        <text class='bg'></text>
+      <image src='../images/drop_down.png' class='drop'></image>
+      </picker>
+      
+    </view>
+  </view>
+  <view class='item'>
+    <view>
+      <text class='desc'>班次选择:</text>
+      <picker bindchange="bindPickerClass" value="{{index}}" range="{{classList}}" range-key='courseName' mode="selector" disabled='{{body!=null}}'>
+        <text class='click-desc' bindtap='chooseClass'>{{classListItem==null?"请选择":classListItem.courseName}}</text>
+          <text class='bg'></text>
+      <image src='../images/drop_down.png' class='drop'></image>
+      </picker>
+    
+    </view>
+  </view>
+  <view class='item'>
+    <view>
+      <text class='desc'>学生姓名:</text>
+      <input value='{{name}}' bindinput='iName'></input>
+    </view>
+  </view>
+  <view class='item'>
+    <view>
+      <text class='desc'>公立学校名称:</text>
+      <input value='{{pubschool}}' bindinput='iPubschool' ></input>
+    </view>
+  </view>
+  <view class='item'>
+    <view>
+      <text class='desc'>公立学校年级:</text>
+      <input value='{{pubgrade}}' bindinput='iPubgrade'></input>
+    </view>
+  </view>
+  <view class='item'>
+    <view>
+      <text class='desc'>联系人:</text>
+      <input value='{{contacts}}' bindinput='iContacts'></input>
+    </view>
+  </view>
+  <view class='item'>
+    <view>
+      <text class='desc'>联系人电话:</text>
+      <input value='{{phone}}' bindinput='iPhone'></input>
+    </view>
+  </view>
+  <view class='item {{body==null?"item-hide":""}}'>
+    <view>
+      <text class='desc'>状态:</text>
+      <text class='state'>{{body==null?"":body.status==0?"待审核":body.status==1?"审核通过":body.staus?"审核未通过":""}}</text>
+    </view>
+  </view>
+  <button class='submit {{body!=null?"submit-hide":""}}' bindtap='submit'>提交信息</button>
+</view>

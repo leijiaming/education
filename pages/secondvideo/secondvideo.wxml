@@ -1,0 +1,11 @@
+<view>
+  <block wx:for="{{courseVideoData}}">
+    <view class='item'  bindtap='detail' data-id='{{item.id}}'>
+      <image src='{{item.faceImg}}'></image>
+      <text class='title'>{{item.name}}</text>
+      <text class='price-desc'>费用:</text>
+      <text class='price'>{{item.fee}}</text>
+      <text class='detail' >查看详情</text>
+    </view>
+  </block>
+</view>

@@ -1,0 +1,19 @@
+<view>
+  <view class='title-line'></view>
+  <block wx:for="{{schoolData}}">
+    <view class='item' >
+      <view bindtap='onItemDetailClick' data-index='{{index}}'>
+       <image class='icon' src='{{item.faceImg}}'></image>
+       <text class='name'>{{item.name}}</text>
+       <text class='phone'>电话:{{item.contactsTel}}</text>
+       <text class='addr'>地址:{{item.address}}</text>
+       <text class='line'></text>
+       </view>
+       <view bindtap='onItemClick' data-index='{{index}}'>
+       <text class='dis-desc'>距离</text>
+       <text class='dis'>{{item.distance}}km</text>
+       </view>
+       
+    </view>
+  </block>
+</view>

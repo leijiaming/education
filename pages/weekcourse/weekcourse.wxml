@@ -1,0 +1,19 @@
+<view>
+  <block wx:for="{{courseInfoList}}">
+    <view class='week'>
+        {{item.courseDate}}
+    </view>
+    <block wx:for="{{item.corurseList}}" wx:for-item="child">
+      <view class='{{item.corurseList.length-1== index?"shitinfo-bottom":"shitinfo"}}'>
+          <text class='title'>{{child.courseName}}</text>
+           <text class='addr'>{{child.courseAddress}}</text>
+            <text class='time'>时间:{{child.courseTime}}</text>
+      </view>
+    </block>
+  </block>
+   <picker bindchange="bindPickerSchool" value="{{index}}" range="{{schoolList}}" range-key='name' mode="selector">
+  <view class='{{choose==0?"bottom":"bottomnone"}}' >
+    {{schoolName}}
+  </view>
+  </picker>
+</view>

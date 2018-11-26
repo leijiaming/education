@@ -1,0 +1,46 @@
+.about-title{
+  width: 100%;
+  display: block;
+  height: 80rpx;
+  text-align: center;
+  line-height: 80rpx;
+  font-size: 35rpx;
+  color: #222222;
+  border-top: 20rpx solid #f2f2f2
+}
+.about-bg{
+  width: 710rpx;
+  margin-left: 20rpx;
+  height: 300rpx;
+}
+.about-desc{
+  margin-top: 10rpx;
+  width: 710rpx;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  line-height: 40rpx;
+  height: 220rpx;
+  color: #999999;
+  font-size: 30rpx;
+  border-bottom: 20rpx solid #f2f2f2
+}
+.conn-title{
+  width: 100%;
+  display: block;
+  height: 100rpx;
+  text-align: center;
+  line-height: 100rpx;
+  font-size: 35rpx;
+  color: #222222;
+}
+.item{
+  width: 710rpx;
+  margin-left: 20rpx;
+  height: 90rpx;
+  border-top: 1rpx solid #f2f2f2
+}
+.item-content{
+  font-size: 30rpx;
+  line-height: 90rpx;
+  color: #999999;
+}

@@ -1,0 +1,52 @@
+<view>
+  <view class='head'>
+    <image src='{{courseData.faceImg}}' class='bg'></image>
+    <text class='title'>{{courseData.name}}</text>
+    <text class='popularity-desc'>人气:</text>
+    <text class='popularity'>{{courseData.hotNum}}</text>
+    <text class='price'>￥{{courseData.fee}}</text>
+    <button class='{{courseData.buyStatus==1?"notsignup":"signup"}}' bindtap='signup' >报名</button>
+  </view>
+  <view class="tabar">
+    <view class='{{currentChoose == 0?"item-bg-choose":"item-bg-normal"}}' bindtap="onTabsItemTap" data-index="0">课程介绍</view>
+    <view class='{{currentChoose == 1?"item-bg-choose":"item-bg-normal"}}' bindtap="onTabsItemTap" data-index="1">课本视频</view>
+    <view class='{{currentChoose == 2?"item-bg-choose":"item-bg-normal"}}' bindtap="onTabsItemTap" data-index="2">首次上课时间</view>
+  </view>
+  <view class='{{currentChoose==1?"show":"hide"}}'>
+    <block wx:for="{{courseData.videoBookList}}">
+      <view class='item' bindtap='onItemClick' data-id='{{item.id}}'>
+        <image class='item-icon' src='{{item.faceImg}}'></image>
+        <text class='item-title'>{{item.bookName}}</text>
+        <text class='item-teacher-desc'>讲师</text>
+        <text class='item-teacher'>{{item.teacherName}}</text>
+        <text class='item-popularity-desc'>共含视频{{item.vedioCount}}节</text>
+         <text class='detail' >查看详情</text>
+      </view>
+    </block>
+  </view>
+  <view class='{{currentChoose==0?"show":"hide"}} summary'>
+    <block wx:for="{{courseData.courseClassList}}">
+      <view class='course-item' >
+        <text class='courseName'>{{item.courseName}}</text>
+        <text class='schoolName'>{{item.schoolName}}</text>
+        <text class='startDate-desc'>开班时间:</text>
+        <text class='startDate'>{{item.startDate}}</text>
+        <text class='schoolTel-desc'>联系电话:</text>
+        <text class='schoolTel'>{{item.schoolTel}}</text>
+         <text  class='{{courseData.buyStatus==1?"notgosignup":"gosignup"}}'>立即报名</text>
+         <button  class='{{courseData.buyStatus==1?"notbtgosignup":"btgosignup"}}' bindtap='gosignup' bindgetuserinfo="onGotUserInfo" open-type="{{userId==null?'getUserInfo':''}}" data-index='{{index}}'></button>
+       
+      </view>
+    </block>
+  </view>
+  <view class='{{currentChoose==2?"show":"hide"}}'>
+    <block wx:for="{{courseData.courseClassList}}">
+        <view class='item-first'>
+            <text class='first-name'>{{item.schoolName}}</text>
+            <text class='first-time'>上课时长:{{item.coursePeriod}}</text>
+            <text class='first-date'>首次上课时间:{{item.startDate}}</text>
+            <text class='first-address'>上课地址:{{item.defaultAddress}}</text>
+        </view>
+    </block>
+  </view>
+</view>

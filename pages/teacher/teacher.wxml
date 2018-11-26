@@ -1,0 +1,12 @@
+<view>
+<view class='line'></view>
+  <block wx:for="{{teacherData}}">
+    <view class='item' bindtap='onItemClick' data-index='{{index}}'>
+      <image src='{{item.headImg}}' class='head'></image>
+      <text class='name'>{{item.name}}</text>
+      <text class='title'>职称:{{item.title}}</text>
+      <text class='major'>教师简介:{{item.courseName}}</text>
+      <image src='{{nextIcon}}' class='next'></image>
+    </view>
+  </block>
+</view>

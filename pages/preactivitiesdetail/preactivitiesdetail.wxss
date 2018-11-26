@@ -1,0 +1,91 @@
+page{
+  background-color: #f2f2f2
+}
+.head,.body{
+  position: relative;
+  width: 100%;
+  background-color: #ffffff
+}
+.head{
+  height: 600rpx;
+}
+.body{
+  margin-top: 20rpx;
+  height: 300rpx;
+}
+.bg{
+  height: 400rpx;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.title{
+  top: 420rpx;
+  left: 20rpx;
+  position: absolute;
+  font-size: 30rpx;
+  color: #222222
+}
+.term-desc{
+  top: 480rpx;
+  left: 20rpx;
+  position: absolute;
+  font-size: 25rpx;
+  color: #999999
+}
+.term{
+  top: 480rpx;
+  left: 120rpx;
+  position: absolute;
+  font-size: 25rpx;
+  color: #6699FF
+}
+.quota-desc{
+  top: 520rpx;
+  left: 20rpx;
+  position: absolute;
+  font-size: 25rpx;
+  color: #999999
+}
+.quota{
+  top: 520rpx;
+  left: 80rpx;
+  position: absolute;
+  font-size: 25rpx;
+  color: #6699FF
+}
+.completed-desc{
+  top: 520rpx;
+  left: 220rpx;
+  position: absolute;
+  font-size: 25rpx;
+  color: #999999
+}
+.completed{
+  top: 520rpx;
+  left: 300rpx;
+  position: absolute;
+  font-size: 25rpx;
+  color: #6699FF
+}
+.rule{
+  height: 100rpx;
+  text-align: center;
+  line-height: 100rpx;
+  top: 0;
+  font-size: 35rpx;
+  color: #333333;
+  position: absolute;
+  display: block;
+  width: 100%
+}
+.desc{
+  position: absolute;
+  top: 120rpx;
+  font-size: 25rpx;
+  color: #999999;
+  left: 20rpx;
+  width: 710rpx;
+  line-height: 40rpx;
+}

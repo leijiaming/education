@@ -1,0 +1,35 @@
+.school-detail {
+  height: 100rpx;
+  text-align: center;
+  line-height: 100rpx;
+  font-size: 35rpx;
+  color: #222;
+}
+
+.bg {
+  width: 710rpx;
+  margin-left: 20rpx;
+  height: 400rpx;
+}
+
+.school-desc {
+  width: 710rpx;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  font-size: 25rpx;
+  color: #999;
+}
+
+.phone {
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  font-size: 25rpx;
+  color: #999;
+}
+
+.addr {
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  font-size: 25rpx;
+  color: #999;
+}

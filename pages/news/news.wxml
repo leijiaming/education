@@ -1,0 +1,9 @@
+<view class='container'>
+  <block wx:for="{{newsData}}">
+    <view class='item' bindtap='onItemClick' data-index='{{index}}'>
+        <image class='item-icon' src='{{item.faceImg}}'></image>
+        <text class='item-title'>{{item.summary}}</text>
+        <text class='item-date'>{{item.createTime}}</text>
+    </view>
+  </block>
+</view>

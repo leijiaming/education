@@ -1,0 +1,138 @@
+.scroll-view_H{
+  width: 100%;
+  white-space: nowrap;
+}
+.line{
+  height: 20rpx;
+  background-color: #f5f5f5
+}
+.item-bg-normal {
+  width: 110rpx;
+  height: 100rpx;
+  display: inline-block;
+  font-size: 28rpx;
+  color: #343434;
+  text-align: center;
+  line-height: 100rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+
+.item-bg-choose {
+  width: 110rpx;
+  height: 96rpx;
+  display: inline-block;
+  border-bottom: 4rpx solid #5fcceb;
+  font-size: 28rpx;
+  color: #343434;
+  text-align: center;
+  line-height: 100rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+.item{
+  height: 220rpx;
+  position: relative;
+  border-bottom: 1rpx solid #e6e6e7
+}
+.icon{
+  width: 280rpx;
+  height: 180rpx;
+  position: absolute;
+  top: 20rpx;
+  left: 20rpx;
+}
+.title{
+  position: absolute;
+  font-size: 28rpx;
+  color: #343434;
+  left: 320rpx;
+  top: 25rpx;
+}
+.semester-desc{
+   position: absolute;
+  font-size: 26rpx;
+  color: #9f9f9f;
+  left: 320rpx;
+  top: 70rpx;
+}
+.semester{
+   position: absolute;
+  font-size: 26rpx;
+  color: #5fcceb;
+  left: 400rpx;
+  top: 70rpx;
+}
+.classhour-desc{
+   position: absolute;
+  font-size: 26rpx;
+  color: #9f9f9f;
+  left: 540rpx;
+  top: 70rpx;
+}
+.classhour{
+   position: absolute;
+  font-size: 26rpx;
+  color: #5fcceb;
+  left: 600rpx;
+  top: 70rpx;
+}
+
+.teacher-desc{
+   position: absolute;
+  font-size: 26rpx;
+  color: #9f9f9f;
+  left: 320rpx;
+  top: 110rpx;
+  display: none;
+}
+.teacher{
+   position: absolute;
+  font-size: 26rpx;
+  color: #5fcceb;
+  left: 400rpx;
+  top: 110rpx;
+  display: none
+}
+.cost-desc{
+   position: absolute;
+  font-size: 26rpx;
+  color: #9f9f9f;
+  left: 320rpx;
+  top: 150rpx;
+}
+.cost{
+   position: absolute;
+  font-size: 26rpx;
+  color: #5fcceb;
+  left: 400rpx;
+  top: 150rpx;
+}
+.detail {
+  width: 128rpx;
+  height: 42rpx;
+  text-align: center;
+  line-height: 42rpx;
+  background-color: #5fcceb;
+  border-radius: 8rpx;
+  font-size: 26rpx;
+  color: #fff;
+  position: absolute;
+  top: 150rpx;
+  right: 15rpx;
+  display: inline-block；
+}
+.bt-detail {
+  width: 128rpx;
+  height: 42rpx;
+  text-align: center;
+  line-height: 42rpx;
+  background-color: transparent;
+  border-radius: 8rpx;
+  font-size: 26rpx;
+  color: #fff;
+  position: absolute;
+  top: 150rpx;
+  right: 15rpx;
+  display: inline-block；
+}

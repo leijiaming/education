@@ -1,0 +1,11 @@
+<view>
+  <block wx:for="{{couponData}}">
+    <view class='item' bindtap='onItemClick'>
+      <image src='{{item.faceImg}}'></image>
+      <text class='title'>{{item.title}}</text>
+      <text class='term'>活动期限: {{item.startDate}}至{{item.endDate}}</text>
+      <text class='count'>限前{{item.amountLimit}}名</text>
+      <text class='use-count'>已发放{{item.grantAmount}}名</text>
+    </view>
+  </block>
+</view>

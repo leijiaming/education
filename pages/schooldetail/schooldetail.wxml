@@ -1,0 +1,9 @@
+<view>
+    <view class='school-detail'>学校详情介绍</view>
+    <view>
+      <image src='{{imgUrls[0]}}' class='bg'></image>
+    </view>
+    <view class='school-desc'>个人介绍 您好! 我来自郑州,我是一名信息工程大学印刷工程专业应届本科即将毕业的学员。 我的性格偏于内向,为人坦率、热情、讲求原则;处事乐观、专心、细致</view>
+    <view class='phone'>电话:010-45697</view>
+    <view class='addr'>地址:陕西西安</view>
+</view>

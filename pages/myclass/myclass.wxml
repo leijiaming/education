@@ -1,0 +1,14 @@
+<view class='container'>
+  <block wx:for="{{userCourseData}}">
+    <view class='item'>
+        <image class='item-icon' src='{{item.faceImg}}'></image>
+        <text class='item-title'>{{item.itemName}}</text>
+        <text class='item-classhour-desc'>课时:</text>
+        <text class='item-classhour'>{{item.courseCount}}/{{item.totalCount}}</text>
+        <text class='item-price-desc'>费用:</text>
+        <text class='item-price'>{{item.fee}}</text>
+        <text class='item-dec'>{{item.orderType==1?'课程':'视频'}}</text>
+        <text class='item-detail' bindtap='detail' data-index='{{index}}'>查看详情</text>
+    </view>
+  </block>
+</view>

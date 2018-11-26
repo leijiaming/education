@@ -1,0 +1,15 @@
+<view>
+  <block wx:for="{{freeCourseData}}">
+    <view class='item' bindtap='use' data-index='{{index}}' >
+      <text class='title-desc'>{{item.name}}</text>
+      <image src='{{item.introduceFaceImg}}'></image>
+      <text class='tuition-desc'>学费:</text>
+      <text class='tuition'>免费</text>
+      <text class='appo-desc'>已预约:</text>
+      <text class='appo'>{{item.reservedCount}}</text>
+      <text class='date-desc'>开学时间:</text>
+      <text class='date'>{{item.startDate}}</text>
+      <text class='use-test' >查看详情</text>
+    </view>
+  </block>
+</view>

@@ -1,0 +1,106 @@
+page{
+  background-color: #f5f5f5
+}
+.tab {
+  width: 100%;
+  white-space: nowrap;
+  background-color: #ffffff
+}
+.item-bg-normal {
+  width: 375rpx;
+  height: 100rpx;
+  display: inline-block;
+  font-size: 28rpx;
+  color: #343434;
+  text-align: center;
+  line-height: 100rpx;
+}
+
+.item-bg-choose {
+  width: 375rpx;
+  height: 96rpx;
+  display: inline-block;
+  border-bottom: 4rpx solid #67cfee;
+  font-size: 28rpx;
+  color: #67cfee;
+  text-align: center;
+  line-height: 100rpx;
+}
+
+.item {
+  width: 710rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  margin-top: 20rpx;
+  height: 190rpx;
+  position: relative;
+}
+.bg{
+  position: absolute;
+  left: 0;
+  top:0;
+  width: 710rpx;
+  height: 190rpx;
+}
+.item-price {
+  position: absolute;
+  width: 250rpx;
+  text-align: center;
+  display: block;
+  top: 30rpx;
+  font-size: 72rpx;
+  color: #fff;
+}
+
+.item-condition {
+  position: absolute;
+  width: 250rpx;
+  text-align: center;
+  display: block;
+  top: 120rpx;
+  font-size: 26rpx;
+  color: #fff;
+}
+
+.item-type {
+  position: absolute;
+  left: 260rpx;
+  top: 20rpx;
+  color: #767676;
+  font-size: 26rpx;
+}
+
+.item-date {
+  position: absolute;
+  left: 260rpx;
+  top: 60rpx;
+  color: #767676;
+  font-size: 26rpx;
+}
+
+.item-use {
+  position: absolute;
+  left: 260rpx;
+  top: 120rpx;
+  color: #ff0033;
+  font-size: 26rpx;
+  width: 136rpx;
+  height: 48rpx;
+  text-align: center;
+  line-height: 48rpx;
+  border: 1rpx solid #ff0033;
+  border-radius: 24rpx;
+}
+.item-not-use {
+  position: absolute;
+  left: 260rpx;
+  top: 120rpx;
+  color: #f5f5f5;
+  font-size: 26rpx;
+  width: 136rpx;
+  height: 48rpx;
+  text-align: center;
+  line-height: 48rpx;
+  border: 1rpx solid #f5f5f5;
+  border-radius: 24rpx;
+}

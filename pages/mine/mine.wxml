@@ -1,0 +1,41 @@
+<view class='container'>
+  <view class='top'>
+    <view class='head-container'>
+      <image src='' class='bg'></image>
+      <image src='{{userInfo==null?persionIcon:userInfo.headImg}}' class='head'></image>
+      <button class='name' bindgetuserinfo="onGotUserInfo" open-type="{{userInfo==null?'getUserInfo':''}}" >{{userInfo==null?"点击登录":userInfo.nickName}}</button>
+    </view>
+  </view>
+  <view class='bottom'>
+    <view bindtap='onItemClick' data-index='0'>
+      <image src='{{persionIcon}}' class='flag-left'></image>
+      <text class='title'>个人资料</text>
+      <image src='{{nextIcon}}' class='flag-right'></image>
+    </view>
+    <view bindtap='onItemClick' data-index='1'>
+      <image src='{{classIcon}}' class='flag-left'></image>
+      <text class='title'>我的课堂</text>
+      <image src='{{nextIcon}}' class='flag-right'></image>
+    </view>
+    <view bindtap='onItemClick' data-index='2'>
+      <image src='{{appoIcon}}' class='flag-left'></image>
+      <text class='title'>我的预约</text>
+      <image src='{{nextIcon}}' class='flag-right'></image>
+    </view>
+    <view bindtap='onItemClick' data-index='3'>
+      <image src='{{classIcon}}' class='flag-left'></image>
+      <text class='title'>我的优惠券</text>
+      <image src='{{nextIcon}}' class='flag-right'></image>
+    </view>
+     <view bindtap='onItemClick' data-index='4'>
+      <image src='{{classIcon}}' class='flag-left'></image>
+      <text class='title'>我的本周课程</text>
+      <image src='{{nextIcon}}' class='flag-right'></image>
+    </view>
+    <view bindtap='onItemClick' data-index='5'>
+      <image src='{{persionIcon}}' class='flag-left'></image>
+      <text class='title'>老会员认证</text>
+      <image src='{{nextIcon}}' class='flag-right'></image>
+    </view>
+  </view>
+</view>

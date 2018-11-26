@@ -1,0 +1,75 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/home/home",
+    "pages/preactivities/preactivities",
+    "pages/video/video",
+    "pages/mine/mine",
+    "pages/myclass/myclass",
+    "pages/myreservation/myreservation",
+    "pages/mycoupon/mycoupon",
+    "pages/myinfo/myinfo",
+    "pages/news/news",
+    "pages/campusinquiries/campusinquiries",
+    "pages/contactus/contactus",
+    "pages/teacherdetail/teacherdetail",
+    "pages/newsdetail/newsdetail",
+    "pages/freecourse/freecourse",
+    "pages/teacher/teacher",
+    "pages/schooldetail/schooldetail",
+    "pages/courseintroduction/courseintroduction",
+    "pages/weekcourse/weekcourse",
+    "pages/preactivitiesdetail/preactivitiesdetail",
+    "pages/classdetail/classdetail",
+    "pages/courseenrollment/courseenrollment",
+    "pages/detail/detail",
+    "pages/reviseinfo/reviseinfo",
+    "pages/videoclassdetail/videoclassdetail",
+    "pages/freeclassdetail/freeclassdetail",
+    "pages/auth/auth",
+    "pages/secondvideo/secondvideo"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "教育校训",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "backgroundColor": "#f2f2f2",
+    "borderStyle": "black",
+    "color": "#222222",
+    "selectedColor": "#67cfee",
+    "list": [
+      {
+        "selectedIconPath": "pages/images/index_home_hover@2x.png",
+        "iconPath": "pages/images/index_home_normal@2x.png",
+        "pagePath": "pages/home/home",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "pages/images/index_youhui_hover@2x.png",
+        "iconPath": "pages/images/index_youhui_normal@2x.png",
+        "pagePath": "pages/preactivities/preactivities",
+        "text": "优惠活动"
+      },
+      {
+        "selectedIconPath": "pages/images/index_video_hover@2x.png",
+        "iconPath": "pages/images/index_video_normal@2x.png",
+        "pagePath": "pages/video/video",
+        "text": "视频"
+      },
+      {
+        "selectedIconPath": "pages/images/index_my_hover@2x.png",
+        "iconPath": "pages/images/index_my_normal@2x.png",
+        "pagePath": "pages/mine/mine",
+        "text": "我的"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

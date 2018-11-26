@@ -1,0 +1,49 @@
+<view>
+  <view class='head'>
+    <image src='{{freeCourseData.introduceFaceImg}}' class='bg'></image>
+    <text class='courseName'>{{freeCourseData.courseName}}</text>
+     <text class='hotNum'>人气:{{freeCourseData.hotNum}}</text>
+       <text class='schoolName'>学校:{{freeCourseData.schoolName}}</text>
+        <text class='startDate'>首次上课时间:{{freeCourseData.startDate}}</text>
+         <text class='coursePeriod'>课时长度:{{freeCourseData.coursePeriod}}</text>
+          <text class='schoolTel'>联系电话:{{freeCourseData.schoolTel}}</text>
+          <text class='jieshao'>课程介绍</text>
+           <text class='jieshaocontent'>{{freeCourseData.introduceContent}}</text>
+            <text class='{{reserveStatus == 0?"use-test":"notuse-test"}}' bindtap='use'>{{reserveStatus == 0?"立即报名":"已报名"}}</text>
+  </view>
+  <action-sheet hidden="{{actionSheetHidden}}" bindchange="actionSheetChange">
+    <action-sheet-item >
+      <view class='menu-title-desc'>
+        预约试听
+      </view>
+    </action-sheet-item>
+    <action-sheet-item >
+      <view class='menu-class-desc'>
+        {{freeCourseData.schoolName}}
+      </view>
+    </action-sheet-item>
+    <action-sheet-item >
+      <view class='menu-class-desc'>
+       {{freeCourseData.courseName}}
+      </view>
+    </action-sheet-item>
+    <action-sheet-item >
+      <view class='name-container'>
+        <input type='text' placeholder='请输入您的姓名' placeholder-class='holder' value='{{name}}' bindinput='iName'></input>
+      </view>
+    </action-sheet-item>
+    <action-sheet-item >
+      <view class='age-container'>
+        <input  placeholder='请输入您的公立学校年级' placeholder-class='holder' value='{{gradeNum}}' bindinput='iGradeNum'></input>
+      </view>
+    </action-sheet-item>
+    <action-sheet-item >
+      <view class='phone-container'>
+        <input type='number' placeholder='请输入您的手机号' placeholder-class='holder' value='{{phone}}' bindinput='iPhone'></input>
+      </view>
+    </action-sheet-item>
+    <action-sheet-item >
+      <button bindtap='submit'>提交</button>
+    </action-sheet-item>
+  </action-sheet>
+  </view> 
